@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ToDoList</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="projectCSS.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="App Logo" class="logo">
+        <h1>My Todo App</h1>
+    </header>
+
+    <div class="jumbotron container center">
+        <h1>Welcome to your To-Do List</h1>
+        <br><br>
+
+        <!-- Program info -->
+        <div class="row-md-1 list-option">
+            <!-- Instructions -->
+        </div>
+        <br>
+        <div class="row-md-2 to-Do-List">
+            <h2>Your LAST to-do list:</h2>
+            <br>
+            <div class="area">
+                <textarea id="showList" readonly="readonly" rows="15" , cols="30"></textarea>
+                <!--Fill after end program-->
+            </div>
+        </div>
+
+        <!-- Add button for start -->
+        <div class="row-md-3 btn">
+            <span>To start press >>> </span>
+            <button type="button" class="btn btn-success" id="startButton">START!!!</button>
+        </div>
+
+        <!-- Color Picker -->
+        <div class="color-picker">
+            <input type="color" id="background-color" value="#ffffff">
+            <label for="background-color">Choose Background Color</label>
+        </div>
+
+        <!-- Date and Time -->
+        <div class="date-time">
+            <span id="current-date"></span>
+            <span id="current-time"></span>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i> Loading
+        </div>
+    </div>
+
+    <!-- JS link -->
+    <script src="projectJS.js"></script>
+</body>
+
+</html>
